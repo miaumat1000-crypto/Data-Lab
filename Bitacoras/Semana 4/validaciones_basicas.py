@@ -569,6 +569,19 @@ def validar_registro(nombre, correo, edad, celular):
     else:
         return False
 
+def validar_opcion(opcion):
+    return opcion in [1, 2, 3]
+
+def clasificar_valor(valor):
+    if valor < 60:
+        return "BAJO"
+    elif valor < 80:
+        return "NORMAL"
+    else:
+        return "ALTO"
+
+
+
 
 # ============================================================
 # 23. PROGRAMA DE PRUEBA

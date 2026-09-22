@@ -1,0 +1,90 @@
+Ejercicio 1.
+
+Ana Pérez: valido
+Carlos Gómez: valido
+12345: invalido
+María López: valido
+Juan_123: invalido
+
+¿Cuántas veces se ejecuta validar_nombre()?
+* 5 veces ya que se valida en cada interacción, es decir al digitar cada uno de los 5 nombres se realiza un analizas sin importar si el resultado es valido o invalido
+
+¿Cuántas veces se ejecuta el if?
+* "if" se ejecuta cinco veces 
+
+¿Qué parte cambia en cada iteración?/¿Qué parte permanece igual?
+* existen dos formas de clasificación, Nombre valido e invalido, por lo que dentro de estos dos rangos el cambio depende del nombre o texto que ingresemos, si tenemos en cuenta el nombre Ana pérez y lo comparamos con Carlos Gómez, ambos son diferentes pero hacen parte de la agrupación de nombres validos, a diferencia de 12345 el cual no es un nombre propio ya que usa caracteres que no pertenecen
+
+Ejercicio 2.
+ana@gmail.com: valido
+correo: invalido
+usuario@dominio.com: valido
+@test.com: invalido
+usuario@: invalido
+
+¿Cuántas veces se ejecuta validar_correo()?
+*Se ejecuta 5 veces. Ocurre una vez por cada vuelta del bucle
+
+¿Cuántas veces se ejecuta el if?
+*Se evalúa 5 veces. En cada una de las 5 iteraciones se evalúa la condición
+
+¿Qué parte cambia en cada iteración?/¿Qué parte permanece igual?
+*La variable del bucle i (toma los valores 0, 1, 2, 3, 4).
+
+*El texto del mensaje del input() (muestra 1, 2, 3, 4, 5 gracias a i + 1)
+*La variable correo (almacena la entrada de texto introducida por el usuario en cada vuelta).
+*El resultado devuelto por validar_correo(correo) (True o False) y, por lo tanto, la rama de la estructura condicional (if o else) que termina ejecutándose.
+Permanece igual:
+La estructura del bucle for y la llamada a la función validar_correo()
+
+La lógica del condicional if...else.
+
+Los mensajes fijos de salida: "Correo válido" y "Correo inválido"
+
+Ejercicio 3.
+
+0: valido
+1: valido
+50: valido
+99: valido
+100: valido
+101: invalido
+-1: invalido
+
+¿Cuántas veces se ejecuta validar_rango()?
+*Se ejecuta 5 veces. Ocurre una vez por cada iteración del bucle
+
+¿Cuántas veces se ejecuta el if?
+*Se evalúa 5 veces. En cada vuelta del bucle se comprueba la condición
+
+¿Qué parte cambia en cada iteración?
+*La variable del bucle i (toma los valores 0, 1, 2, 3, 4)
+*El número de la iteración mostrado en el mensaje del input() (1, 2, 3, 4, 5)
+*La variable valor, que almacena el número ingresado por el usuario en cada vuelta (0, 1, 50, 99, 100)
+
+¿Qué parte permanece igual?
+La estructura del bucle for y la llamada a la función validar_rango().
+
+*Los límites fijos pasados a la función (0 y 100)
+*La lógica del condicional if...else y sus mensajes de texto impresos.
+
+Ejercicio 4.
+Estudiante: valido
+Docente: valido
+Administrativo: valido 
+
+¿Cuántas veces se ejecuta validar_opcion()?
+*se ejecuta 3 veces (hasta el momento). Cada vez que el usuario ingresa un valor válido, la función se llama una vez. Para que se ejecute las 5 veces totales del bucle, el usuario tendría que ingresar las 2 entradas faltantes.
+
+¿Cuántas veces se ejecuta el if?
+*Se evalúa 3 veces (hasta el momento). Se evalúa en cada iteración justo después de recibir la entrada del usuario. En los tres casos evaluó a True, por lo que imprimió "Opción válida" 3 veces
+
+¿Qué parte cambia en cada iteración?
+*La variable del bucle i (toma los valores 0, 1, 2 en estas primeras iteraciones).
+*La variable opcion, que recibe el número ingresado en cada vuelta (1, 2, 3).
+*El valor que recibe validar_opcion(opcion) como argumento.
+
+¿Qué parte permanece igual?
+*El mensaje del input(): "Seleccione una opción (1, 2 o 3): " (a diferencia de los códigos anteriores, este no usa i + 1 en el texto).
+*La lista fija contra la que se compara dentro de la función: [1, 2, 3].
+*La lógica del if...else y sus mensajes impresos ("Opción válida" / "Opción inválida").

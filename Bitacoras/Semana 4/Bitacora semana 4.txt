@@ -145,3 +145,68 @@ print("ALTO:", alto)
 Ejercicio 7:
 Este programa procesa ocho nombres utilizando la función validar_nombre(). Los nombres válidos e inválidos se contabilizan mediante contadores. Posteriormente se calcula el porcentaje de nombres válidos con respecto al total de registros procesados.
 Finalmente se muestran los resultados obtenidos.
+
+from validaciones import validar_nombre
+
+validos = 0
+invalidos = 0
+total = 8
+
+for i in range(total):
+    nombre = input(f"Ingrese el nombre {i + 1}: ")
+
+    if validar_nombre(nombre):
+        validos += 1
+    else:
+        invalidos += 1
+
+porcentaje = (validos / total) * 100
+
+print("Válidos:", validos)
+print("Inválidos:", invalidos)
+print("Porcentaje de calidad:", porcentaje, "%")
+
+Ejercicio 8:
+Este programa valida diez edades utilizando la función validar_rango(). Una edad será considerada válida únicamente si se encuentra dentro del rango de 0 a 120 años.
+El programa contabiliza la cantidad de edades válidas e inválidas y presenta un resumen al finalizar.
+
+from validaciones import validar_rango
+
+validas = 0
+invalidas = 0
+
+for i in range(10):
+    edad = int(input(f"Ingrese la edad {i + 1}: "))
+
+    if validar_rango(edad, 0, 120):
+        validas += 1
+    else:
+        invalidas += 1
+
+print("Edades válidas:", validas)
+print("Edades inválidas:", invalidas)
+
+Ejercicio 9:
+Este programa procesa cinco registros de usuario. Cada registro contiene nombre, correo electrónico y edad. Se realizan validaciones independientes para cada campo y solamente cuando todas las validaciones son correctas el registro es considerado válido.
+En caso de que alguna validación falle, el registro será marcado como inválido.
+
+from validaciones import validar_nombre, validar_correo, validar_rango
+
+for i in range(5):
+
+    print(f"Registro {i + 1}")
+
+    nombre = input("Nombre: ")
+    correo = input("Correo: ")
+    edad = int(input("Edad: "))
+
+    nombre_valido = validar_nombre(nombre)
+    correo_valido = validar_correo(correo)
+    edad_valida = validar_rango(edad, 0, 120)
+
+    if nombre_valido and correo_valido and edad_valida:
+        print("Registro válido")
+    else:
+        print("Registro inválido")
+
+Ejercicio 10:

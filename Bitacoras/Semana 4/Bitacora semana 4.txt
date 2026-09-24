@@ -88,3 +88,60 @@ Administrativo: valido
 *El mensaje del input(): "Seleccione una opción (1, 2 o 3): " (a diferencia de los códigos anteriores, este no usa i + 1 en el texto).
 *La lista fija contra la que se compara dentro de la función: [1, 2, 3].
 *La lógica del if...else y sus mensajes impresos ("Opción válida" / "Opción inválida").
+
+Ejercicio 5:
+Este programa solicita al usuario ingresar 10 correos electrónicos. Utiliza la función validar_correo()para verificar si cada correo cumple con una estructura válida. Si el correo es válido, aumenta en uno el contador de correos válidos.
+En caso contrario, aumenta el contador de correos inválidos. Al finalizar el ciclo, se muestran las cantidades totales de correos válidos e inválidos procesados.
+ from validaciones import validar_correo
+
+validos = 0
+invalidos = 0
+
+for i in range(10):
+    correo = input(f"Ingrese el correo {i + 1}: ")
+
+    if validar_correo(correo):
+        validos += 1
+    else:
+        invalidos += 1
+
+print("Correos válidos:", validos)
+print("Correos inválidos:", invalidos)
+
+Ejercicio 6:
+Este programa clasifica diez valores numéricos en tres categorías: BAJO, NORMAL y ALTO. Para hacerlo utiliza la función clasificar_valor(), que analiza el valor ingresado y devuelve la categoría correspondiente.
+Durante el procesamiento se llevan contadores para cada categoría y al finalizar se muestra la cantidad de datos encontrados en cada una.
+
+def clasificar_valor(valor):
+    if valor < 60:
+        return "BAJO"
+    elif valor < 80:
+        return "NORMAL"
+    else:
+        return "ALTO"
+
+bajo = 0
+normal = 0
+alto = 0
+
+for i in range(10):
+    valor = float(input(f"Ingrese el valor {i + 1}: "))
+
+    categoria = clasificar_valor(valor)
+
+    print("Categoría:", categoria)
+
+    if categoria == "BAJO":
+        bajo += 1
+    elif categoria == "NORMAL":
+        normal += 1
+    else:
+        alto += 1
+
+print("BAJO:", bajo)
+print("NORMAL:", normal)
+print("ALTO:", alto)
+
+Ejercicio 7:
+Este programa procesa ocho nombres utilizando la función validar_nombre(). Los nombres válidos e inválidos se contabilizan mediante contadores. Posteriormente se calcula el porcentaje de nombres válidos con respecto al total de registros procesados.
+Finalmente se muestran los resultados obtenidos.

@@ -1,0 +1,7 @@
+while True:
+  contraseña = input("Ingrese la contraseña: ")
+  if contraseña == "Data2026":
+    print("Acceso concedido.")
+    break
+  else:
+    print("acceso denegado, intente de nuevo")

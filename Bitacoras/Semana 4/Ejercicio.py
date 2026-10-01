@@ -1,5 +1,5 @@
 ## Ejercicio 5:
-from validaciones import validar_correo
+from validaciongites import validar_correo
 
 validos = 0
 invalidos = 0
@@ -138,11 +138,10 @@ print("Válidos:", validos)
 print("Inválidos:", invalidos)
 
 ##Ejercicio 11:
-calidad = (validos / total) * 100
-validos = 17
-total = 20
-calidad = (17 / 20) * 100
-calidad = 0.85 * 100
-calidad = 85
-Calidad de los datos: 85 %
-`
+# calidad = (validos / total) * 100
+# validos = 17
+# total = 20
+# calidad = (17 / 20) * 100
+# calidad = 0.85 * 100
+# calidad = 85
+# Calidad de los datos: 85 %

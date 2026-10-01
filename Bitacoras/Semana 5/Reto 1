@@ -1,0 +1,10 @@
+contador = 0
+
+while True:
+    edad = int(input("Ingrese la edad (Para finalizar bucle ingrese 0)"))
+    if edad == 0:
+        break
+    contador += 1
+
+print("Edades ingtresadas:", contador)
+

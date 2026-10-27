@@ -1,0 +1,53 @@
+Preguntas reto 1:
+
+¿Qué parte del código corresponde a la definición?
+¿Qué parte corresponde a la invocación?
+¿Qué responsabilidad tiene la función?
+
+##SOLUCIÓN##
+- Definición (def) muestra aquello que el usuario busca ordenar hacer, todo lo que se encunetre dentro de los parentesis corresponde
+a lo que la funcion va a ejecutar.
+
+- La invocación es la llamada a la función para que se pueda ejecutar que es representado con los parentesis dobles al final de la primera linea ()
+
+-la responsabilidad es la actividad que se le especifica que se le asigna a la funcion en este caso imprimir el mensaje de bienvenido al data lab
+
+Preguntas reto 2:
+
+¿Cuál es el parámetro?
+¿Cuál es el argumento?
+¿Qué ventaja tiene utilizar un parámetro?
+
+##SOLUCIÓN##
+
+- el parametro es lo que se define como "nombre" ya que se encuentra definida dentro de los parentesis () y actua como un espacio para recibir información
+
+- los argumentos son aquellos valores reales y especificos que reaccionan con la formula para ser parte de la ejecución en este caso serian los nombres propios
+ana, carlos y María
+
+- permite que la función pueda utilizarse nuevamente y evitar que se tenga que escribir nuevamente la función mas de una vez
+
+Preguntas reto 3:
+
+¿Qué recibe la función?
+¿Qué calcula?
+¿Qué retorna?
+¿Dónde queda almacenado el resultado?
+
+##SOLUCIÓN##
+- la funcion recibe un valor numerico desde a entrada (valor)
+- la funcion realiza una multiplicación por dos, duplicando el numero y sumandolo 
+- se retorna el valor resultante de la función obviamente con la funcion que le da nombre (return)
+- el valor queda disponible en la memoria temporalmente para ser usado dentro del programa
+
+Pregunta reto 4:
+La función "obtener_resultado(valor)" es la que permite que otro bloque del programa utilice el resultado, gracias a la instrucción de return
+print(): muestra un mensaje para que el usuario lo pueda visualizar pero el sistema no lo guarda para usarlo en otra operación
+return: sirve para que la funcion le devuelva el resultado al sistema gracias a esto el programa puede guardarlo para usarlo como variable permitiendo sumarlo, restarlo etc.
+
+Pregunta reto 5:
+¿Por qué es mejor reutilizar clasificar_valor()?
+##SOLUCIÓN##
+
+es mucho mejor ya que centra toda la logica y las reglas de negocio en un solo lugar, por lo que si se necesita editar alguna parte de los rangos o condiciones 
+solo se tendra que modificar esta función una vez en lugar de hacerlo mutiples veces en el bloque del codigo lo que permite que haya menos errores e inconsistencias

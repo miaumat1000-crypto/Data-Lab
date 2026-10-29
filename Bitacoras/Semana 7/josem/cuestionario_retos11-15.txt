@@ -1,0 +1,11 @@
+Reto 11:
+
+##SOLUCIÓN##
+
+Se realiza un codigo por el cual se tenga en cuenta un menu principal donde se determine la selección de 4 opciones, las tres primeras ejecutan 3 selecciones mientras que la cuarta determina la salida del menu interactivo
+para hacerlo se definen las tres opciones (ejecutar operación 1, 2 ,3 ) y haciendo uso de if y elif se realiza la conexión de las 4 elecciones determinando la 4 para que al escogerla salga del programa, al digitar un valor invalido como 5 o 6 el sistema va a reaccionar mencionando una opción invalida y pidiendo volver a digitarla correctamente
+
+Reto 12 
+
+##SOLUCIÓN##
+

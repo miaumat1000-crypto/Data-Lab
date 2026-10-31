@@ -54,7 +54,45 @@ Bandera               No, es local ya que vive unicamente     no, son procesos q
 
 Conclusión: despues de identificar todas las funciones y el intercambio de información se concluye que todas las dependencias se realizan de forma local garantizando que el codigo este mas limpio y sea mas seguro y facil de mantener
 
-Reto 16
+Reto 17
 
 ##SOLUCIÓN##
+al realizar la comparación de antes y despues de la refactorización nos dimos cuenta que el sistema recorria bien lo que tenia que hacer, pero que algunas funciones no las realizaba de forma correcta como lo es que al realizar el registro completo hacia la suma del total pero no mostraba los valores ingresados ademas de que no los recorria, al organizar mejor el codigo y separarlo del main
+pudimos corregir estos aspectos definiendo los sistemas aritmeticos
+
+
+Reto 19
+
+¿Existe alguna función que esté realizando demasiadas responsabilidades?
+
+##SOLUCIÓN##
+
+No, ya que al hacer el proceso de refactorización modular separando la entrada de datos, la lógica de negocio, la clasificación, el procesamiento y la presentación de resultados, ninguna función tiene responsabilidades excesivas. Cada una cumple con el principio de responsabilidad única, lo que hace que el código sea limpio, fácil de mantener y probar. 
+
+Reto 20
+##SOLUCIÓN##
+
+mostrar_menu()
+Responsabilidad:
+Imprimir en consola las opciones del menú principal del programa.
+
+leer_opcion()
+Responsabilidad:
+Solicitar y validar la opción numérica ingresada por el usuario por teclado.
+
+clasificar_valor(valor)
+Responsabilidad:
+Recibir un valor numérico y retornar su clasificación (define si el valor es alto o estándar).
+
+procesar_registros()
+Responsabilidad:
+Procesar una cantidad de registros ingresados y retornar los resultados consolidados.
+
+mostrar_resumen()
+Responsabilidad:
+Presentar el resumen final generado por el procesamiento de registros en la consola, esto se muestra como una tabla.
+
+main()
+Responsabilidad:
+Controlar el flujo principal de ejecución del programa y la navegación por el menú, basicamente es como el que lidera todas las funciones.
 

@@ -1,0 +1,60 @@
+Reto 11:
+
+##SOLUCIÓN##
+
+Se realiza un codigo por el cual se tenga en cuenta un menu principal donde se determine la selección de 4 opciones, las tres primeras ejecutan 3 selecciones mientras que la cuarta determina la salida del menu interactivo
+para hacerlo se definen las tres opciones (ejecutar operación 1, 2 ,3 ) y haciendo uso de if y elif se realiza la conexión de las 4 elecciones determinando la 4 para que al escogerla salga del programa, al digitar un valor invalido como 5 o 6 el sistema va a reaccionar mencionando una opción invalida y pidiendo volver a digitarla correctamente
+
+Reto 12 
+
+##SOLUCIÓN##
+
+teniendo en cuenta el menu que realizamos anteriormente, lo usamos para continuar nuestro trabajo en el reto dos, donde conectamos ese menu a una seleccion que nos permita ingresar a un registro de usuarios de los cuales podemos determinar diferentes valores de los cuales se clasificaba en valor estandar o valor alto
+
+Reto 13
+
+¿Por qué es conveniente separar el cálculo del resumen de su presentación?
+
+##SOLUCIÓN##
+
+es conveniente ya que permite que el codigo quede mejor distribuido y organizado, ademas que si decidio calcular una cifra puedo realizar la funcion sin que se llegue a alterar la parte visual de la tabla, al igual que si deseo cambiar la interfaz textual a una grafica es posible sin que tenga que hacer cambios extremos
+en el codigo o tener que rescribirlo
+
+Reto 14
+
+¿que responsabilidades quedaron fuera de main()?
+
+##SOLUCIÓN##
+
+Fuera de main() quedaron todas las responsabilidades operativas y de detalle:
+la impresión del menú (mostrar_menu).
+la lectura y validación de la opción del usuario (leer_opcion).
+la lógica matemática y contadores (procesar_registros).
+la evaluación o categoría de cada dato (clasificar_valor).  
+el diseño visual del reporte (mostrar_resumen). 
+
+main() ahora solo actúa como un coordinador general que activa el ciclo de ejecución. es decir ya no quedan todas las opecaciones sobre este y unicamente realiza los caminos para que las demas funciones se ejecuten pero esto se hace de forma independiente
+
+Reto 15
+
+##SOLUCIÓN##
+
+Gracias a los pasos anteriores y a la refactorización el codigo ya no usa variables globales para transladar información entre funciones ya que viaja por medio de lo que entra a la función y lo que la función devuelve como en los valores guardados en procesar registros.
+__________            _____________                           ______________________                              ___________________
+/Variable/            /¿es global?/                          /¿puede ser parametro?/                             /¿puede retornarse?/
+
+Cantidad/valor        No, es local ya que vive unicamente     si, ya que el usuario debe iniciar el proceso      No (son datos de entrada)
+                      dentro de los limites de la funcion
+
+Contador/acumulador   No, es local ya que vive unicamente     no, son procesos que suceden desde dentro          Si mediante los valores recopilados
+                      dentro de los limites de la funcion
+
+Bandera               No, es local ya que vive unicamente     no, son procesos que suceden desde dentro          si ya que el retorno se encuentra en el proceso
+                      dentro de los limites de la funcion
+
+Conclusión: despues de identificar todas las funciones y el intercambio de información se concluye que todas las dependencias se realizan de forma local garantizando que el codigo este mas limpio y sea mas seguro y facil de mantener
+
+Reto 16
+
+##SOLUCIÓN##
+

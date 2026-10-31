@@ -1,17 +1,29 @@
-def ejecutar_operacion_uno():
-    print("Ejecutando la operación 1...")
+def mostrar_menu():
+    print("\n--- ♫ MENÚ PRINCIPAL ♫ ---")
+    print("1. Procesar registros y mostrar resumen")
+    print("2. Ejecutar operación 2")
+    print("3. Ejecutar operación 3")
+    print("4. Salir")
 
-def ejecutar_operacion_dos():
-    print("Ejecutando la operación 2...")
+def leer_opcion():
+    try:
+        return int(input("Por favor, digite una opción: "))
+    except ValueError:
+        print("Por favor, ingrese un número válido.")
+        return 0  
 
-def ejecutar_operacion_tres():
-    print("Ejecutando la operación 3...")
+def clasificar_valor(valor):
+    if valor > 10:
+        print("Clasificación: Valor alto detectado.")
+        return "alto"
+    else:
+        print("Clasificación: Valor estándar.")
+        return "normal"
 
 def procesar_registros(cantidad):
     contador = 0
     acumulador = 0
     bandera = False
-    
     contador_altos = 0
     contador_normales = 0
     
@@ -21,23 +33,21 @@ def procesar_registros(cantidad):
         contador += 1
         acumulador += valor
         
-        if valor > 10:
+        
+        clasificacion = clasificar_valor(valor)
+        if clasificacion == "alto":
             bandera = True
-            contador_altos += 1  
-            print("Clasificación: Valor alto detectado.")
+            contador_altos += 1
         else:
-            contador_normales += 1  
-            print("Clasificación: Valor estándar.")
+            contador_normales += 1
 
-    
-    resultado = {
+    return {
         "total_registros": contador,
         "suma_acumulada": acumulador,
         "bandera_activa": bandera,
         "altos": contador_altos,
         "normales": contador_normales
     }
-    return resultado
 
 def mostrar_resumen(total, altos, normales, bajos, suma, existe_alto):
     print("\n" + "="*30)
@@ -50,47 +60,37 @@ def mostrar_resumen(total, altos, normales, bajos, suma, existe_alto):
     print(f"Registros bajos               : {bajos}")
     
     if existe_alto:
-        print("Alerta: ¡Se detectaron valores altos en el proceso! (Bandera activa)")
+        print("Alerta: Se detectaron valores altos en el proceso.")
     else:
-        print("Estado: Todos los valores se mantuvieron en niveles estándar o bajos.")
+        print("Estado: Todos los valores se mantuvieron en niveles estándar.")
     print("="*30)
 
 def ejecutar_opcion(opcion):
     if opcion == 1:
         cant = int(input("Ingrese la cantidad de registros a procesar: "))
         resultado = procesar_registros(cant)
-        
-        
         mostrar_resumen(
             total=resultado["total_registros"],
-            altos=resultado["altos"],         
-            normales=resultado["normales"],   
-            bajos=0,                          
+            altos=resultado["altos"],
+            normales=resultado["normales"],
+            bajos=0,
             suma=resultado["suma_acumulada"],
             existe_alto=resultado["bandera_activa"]
         )
-        print("Resultado obtenido:", resultado)
     elif opcion == 2:
-        ejecutar_operacion_dos()
+        print("Ejecutando operación 2...")
     elif opcion == 3:
-        ejecutar_operacion_tres()
+        print("Ejecutando operación 3...")
     elif opcion == 4:
         print("Saliendo del programa...")
     else:
         print("Opción inválida. Por favor, intente de nuevo.")
+
 if __name__ == "__main__":
     opcion = 0
     while opcion != 4:
-        print("\n---♬  MENÚ PRINCIPAL ♪---")
-        print("1. Procesar registros")
-        print("2. Ejecutar operación 2")
-        print("3. Ejecutar operación 3")
-        print("4. Salir")
-        
-        try:
-            opcion = int(input("Por favor, digite una opción: "))
-            
+        mostrar_menu()
+        opcion = leer_opcion()
+        if opcion != 4:
             ejecutar_opcion(opcion)
-        except ValueError:
-            print("Por favor, ingrese un número válido.")
 

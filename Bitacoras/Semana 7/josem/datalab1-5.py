@@ -44,4 +44,4 @@ def clasificar_valor(valor):
 
 print(clasificar_valor(85))  
 print(clasificar_valor(50)) 
-print(clasificar_valor(20)) 
+print(clasificar_valor(20))

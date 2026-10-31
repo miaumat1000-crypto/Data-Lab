@@ -9,3 +9,8 @@ Reto 12
 
 ##SOLUCIÓN##
 
+teniendo en cuenta el menu que realizamos anteriormente, lo usamos para continuar nuestro trabajo en el reto dos, donde conectamos ese menu a una seleccion que nos permita ingresar a un registro de usuarios de los cuales podemos determinar diferentes valores de los cuales se clasificaba en valor estandar o valor alto
+
+Reto 13
+
+##SOLUCIÓN##

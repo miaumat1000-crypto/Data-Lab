@@ -12,5 +12,8 @@ Reto 12
 teniendo en cuenta el menu que realizamos anteriormente, lo usamos para continuar nuestro trabajo en el reto dos, donde conectamos ese menu a una seleccion que nos permita ingresar a un registro de usuarios de los cuales podemos determinar diferentes valores de los cuales se clasificaba en valor estandar o valor alto
 
 Reto 13
-
+¿Por qué es conveniente separar el cálculo del resumen de su presentación?
 ##SOLUCIÓN##
+
+es conveniente ya que permite que el codigo quede mejor distribuido y organizado, ademas que si decidio calcular una cifra puedo realizar la funcion sin que se llegue a alterar la parte visual de la tabla, al igual que si deseo cambiar la interfaz textual a una grafica es posible sin que tenga que hacer cambios extremos
+en el codigo o tener que rescribirlo

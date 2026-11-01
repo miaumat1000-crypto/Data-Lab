@@ -1,0 +1,10 @@
+6. ¿Qué ventaja tiene dividir DataLab en funciones?
+Permite organizar el código en bloques más pequeños con responsabilidades mucho más precisas para que la lectura del codigo sea más fácil y  reduce los errores, permitiendo tener un código más limpio y que es más fácil de comprobar 
+7. ¿Por qué no es conveniente depender innecesariamente de variables globales?
+Porque esto hace que cualquier función pueda modificarlas de forma imprevista, lo que hace el código menos predecible y dificulta la depuración e identificación de errores. Además de que rompe la independencia y modularidad de las funciones.  
+8. ¿Qué significa refactorizar?
+Es el proceso de mejora a el diseño interno del código fuente sin alterar su comportamiento ni los resultados esperados.  
+9. ¿Qué riesgo existe al refactorizar un programa que ya funciona?
+El mayor riesgo es introducir nuevos errores o alterar sin querer el funcionamiento si no se realizan pruebas minuciosas antes y después de hacer los cambios.  
+10. ¿Por qué fue útil crear un commit antes de comenzar la refactorización?
+Porque establece una línea base o un punto de control seguro, el checkpoint en el control de versiones con Git, lo que nos ayuda a regresar al estado funcional anterior de inmediato si algo falla después o durante el proceso.

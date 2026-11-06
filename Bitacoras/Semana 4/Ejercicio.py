@@ -1,5 +1,5 @@
 ## Ejercicio 5:
-from validaciongites import validar_correo
+from validaciones_basicas import validar_correo
 
 validos = 0
 invalidos = 0
@@ -47,7 +47,7 @@ print("NORMAL:", normal)
 print("ALTO:", alto)
 
 ##Ejercicio 7:
-from validaciones import validar_nombre
+from validaciones_basicas import validar_nombre
 
 validos = 0
 invalidos = 0
@@ -68,7 +68,7 @@ print("Inválidos:", invalidos)
 print("Porcentaje de calidad:", porcentaje, "%")
 
 ##Ejercicio 8:
-from validaciones import validar_rango
+from validaciones_basicas import validar_rango
 
 validas = 0
 invalidas = 0
@@ -85,7 +85,7 @@ print("Edades válidas:", validas)
 print("Edades inválidas:", invalidas)
 
 ##Ejercicio 9:
-from validaciones import validar_nombre, validar_correo, validar_rango
+from validaciones_basicas import validar_nombre, validar_correo, validar_rango
 
 for i in range(5):
 
@@ -105,7 +105,7 @@ for i in range(5):
         print("Registro inválido")
 
 ##Ejercicio 10:
-from validaciones import validar_nombre, validar_correo, validar_rango
+from validaciones_basicas import validar_nombre, validar_correo, validar_rango
 
 total = 5
 validos = 0
